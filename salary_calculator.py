@@ -11,8 +11,8 @@
 #
 
 # Set the initial values.
-SALARY_PER_HOUR = int(input('How much do you get paid per hour: '))
-HOURS_PER_DAY = int(input('How many hours do you work per day: '))
+SALARY_PER_HOUR = float(input('How much do you get paid per hour: '))
+HOURS_PER_DAY = float(input('How many hours do you work per day: '))
 duration = input('Enter the duration to calculate (day/week/month/year): ')
 
 # Duration input validation.

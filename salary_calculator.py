@@ -32,7 +32,7 @@ Now calculate the salary based on the user input duration.
 """
 
 if duration == 'day':
-    print(f'After a day you will earn ${round(SALARY_PER_HOUR * HOURS_PER_DAY, 1)}')
+    print(f'After a day you will earn ${SALARY_PER_HOUR * HOURS_PER_DAY}')
 else:
     DAYS_PER_WEEK = int(input('How many days do you work per week: '))
 
@@ -42,8 +42,8 @@ else:
         DAYS_PER_WEEK = int(input('How many days do you work per week: '))
 
     if duration == 'week':
-        print(f'After a {duration} you will earn ${round(SALARY_PER_HOUR * HOURS_PER_DAY * DAYS_PER_WEEK, 1)}')
+        print(f'After a {duration} you will earn ${SALARY_PER_HOUR * HOURS_PER_DAY * DAYS_PER_WEEK}')
     elif duration == 'month':
-        print(f'After a {duration} you will earn between ${round(SALARY_PER_HOUR * HOURS_PER_DAY * DAYS_PER_WEEK * 4, 1)} and ${round(SALARY_PER_HOUR * HOURS_PER_DAY * DAYS_PER_WEEK * 4.34524, 2)}')
+        print(f'After a {duration} you will earn between ${SALARY_PER_HOUR * HOURS_PER_DAY * DAYS_PER_WEEK * 4} and ${round(SALARY_PER_HOUR * HOURS_PER_DAY * DAYS_PER_WEEK * 4.34524, 2)}')
     else:
-        print(f'After a {duration} you will earn between ${round(SALARY_PER_HOUR * HOURS_PER_DAY * DAYS_PER_WEEK * 48, 1)} and ${round(SALARY_PER_HOUR * HOURS_PER_DAY * DAYS_PER_WEEK * 52.1329, 2)}')
+        print(f'After a {duration} you will earn between ${SALARY_PER_HOUR * HOURS_PER_DAY * DAYS_PER_WEEK * 48} and ${round(SALARY_PER_HOUR * HOURS_PER_DAY * DAYS_PER_WEEK * 52.1329, 2)}')

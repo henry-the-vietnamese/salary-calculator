@@ -27,7 +27,7 @@ while duration not in ['day', 'week', 'month', 'year']:
     duration = input('Enter the duration to calculate (day/week/month/year): ')
 
 """
-Now we have a valid duration - belongs to one of the four - day/week/month/year.
+Now we have a valid duration which belongs to one of the four - day/week/month/year.
 Now calculate the salary based on the user input duration.
 """
 
@@ -35,18 +35,22 @@ if duration == 'day':
     print(f'After a day you will earn ${SALARY_PER_HOUR * HOURS_PER_DAY}')
 
 else:
+    # Now duration is either week/month/year, ask for how many days spent working per week.
     DAYS_PER_WEEK = int(input('How many days do you work per week: '))
 
     # Day input validation.
-    while DAYS_PER_WEEK < 0 or DAYS_PER_WEEK > 7:
+    while DAYS_PER_WEEK not in range(8):
         print('Error: Invalid day value')
         DAYS_PER_WEEK = int(input('How many days do you work per week: '))
 
+    # Set a variable for a common operation.
+    LONG_TERM_SALARY = SALARY_PER_HOUR * HOURS_PER_DAY * DAYS_PER_WEEK
+
     if duration == 'week':
-        print(f'After a {duration} you will earn ${SALARY_PER_HOUR * HOURS_PER_DAY * DAYS_PER_WEEK}')
+        print(f'After a {duration} you will earn ${LONG_TERM_SALARY}')
 
     elif duration == 'month':
-        print(f'After a {duration} you will earn between ${SALARY_PER_HOUR * HOURS_PER_DAY * DAYS_PER_WEEK * 4} and ${round(SALARY_PER_HOUR * HOURS_PER_DAY * DAYS_PER_WEEK * 4.34524, 2)}')
+        print(f'After a {duration} you will earn between ${LONG_TERM_SALARY * 4} and ${round(LONG_TERM_SALARY * 4.34524, 2)}')
 
     else:
-        print(f'After a {duration} you will earn between ${SALARY_PER_HOUR * HOURS_PER_DAY * DAYS_PER_WEEK * 48} and ${round(SALARY_PER_HOUR * HOURS_PER_DAY * DAYS_PER_WEEK * 52.1329, 2)}')
+        print(f'After a {duration} you will earn between ${LONG_TERM_SALARY * 48} and ${round(LONG_TERM_SALARY * 52.1329, 2)}')

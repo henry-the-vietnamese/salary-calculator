@@ -27,19 +27,20 @@ while duration not in ['day', 'week', 'month', 'year']:
     duration = input('Enter the duration to calculate (day/week/month/year): ')
 
 """
-Now we have a valid duration which belongs to one of the four - day/week/month/year.
-Now calculate the salary based on the user input duration.
+Now that we have a valid duration which belongs to one of the four - day/week/month/year
+Calculate the salary based on the user input duration.
 """
 
 if duration == 'day':
     print(f'After a day you will earn ${SALARY_PER_HOUR * HOURS_PER_DAY}')
 
 else:
-    # Now duration is either week/month/year, ask for how many days spent working per week.
+    # Now that duration is either week/month/year, ask for how many days spent working per week.
     DAYS_PER_WEEK = int(input('How many days do you work per week: '))
 
     # Day input validation.
-    while DAYS_PER_WEEK not in range(8):
+    while DAYS_PER_WEEK not in range(7):
+        # Since this variable is an int data type, range() function makes the Boolean expression shorter.
         print('Error: Invalid day value')
         DAYS_PER_WEEK = int(input('How many days do you work per week: '))
 

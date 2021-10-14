@@ -32,6 +32,7 @@ Calculate the salary based on the user input duration.
 """
 
 if duration == 'day':
+    # Calculate the salary earned per day.
     print(f'After a day you will earn ${SALARY_PER_HOUR * HOURS_PER_DAY}')
 
 else:
@@ -47,6 +48,7 @@ else:
     # Set a variable for a common operation.
     LONG_TERM_SALARY = SALARY_PER_HOUR * HOURS_PER_DAY * DAYS_PER_WEEK
 
+    # Calculate the salary earned per week/month/year.
     if duration == 'week':
         print(f'After a {duration} you will earn ${LONG_TERM_SALARY}')
 

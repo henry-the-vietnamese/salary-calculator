@@ -13,19 +13,19 @@
 
 # Variable initialisation.
 SALARY_PER_HOUR = float(input('How much do you get paid per hour: '))
-HOURS_PER_DAY = float(input('How many hours do you work per day: '))
 
+HOURS_PER_DAY = float(input('How many hours do you work per day: '))
 # Hour input validation.
 while not 0 <= HOURS_PER_DAY <= 24:
     print('Error: Invalid hour value')
     HOURS_PER_DAY = float(input('How many hours do you work per day: '))
 
 duration = input('Enter the duration to calculate (day/week/month/year): ')
-
 # Duration input validation.
 while duration not in ['day', 'week', 'month', 'year']:
     print('Error: Invalid duration')
     duration = input('Enter the duration to calculate (day/week/month/year): ')
+
 
 """
 Now that we have a valid duration which belongs to one of the four - day/week/month/year
@@ -38,10 +38,8 @@ if duration == 'day': # Calculate the salary earned per day.
 else:
     # Now that duration is either week/month/year, ask for how many days spent working per week.
     DAYS_PER_WEEK = int(input('How many days do you work per week: '))
-
     # Day input validation.
     while DAYS_PER_WEEK not in range(7):
-        # Since this variable is an int data type, range() function makes the Boolean expression shorter.
         print('Error: Invalid day value')
         DAYS_PER_WEEK = int(input('How many days do you work per week: '))
 

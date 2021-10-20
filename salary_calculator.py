@@ -10,12 +10,13 @@
 #   from a third party and without using any aids other than those cited.
 #
 
-# Set the initial values.
+
+# Variable initialisation.
 SALARY_PER_HOUR = float(input('How much do you get paid per hour: '))
 HOURS_PER_DAY = float(input('How many hours do you work per day: '))
 
 # Hour input validation.
-while HOURS_PER_DAY < 0 or HOURS_PER_DAY > 24:
+while not 0 <= HOURS_PER_DAY <= 24:
     print('Error: Invalid hour value')
     HOURS_PER_DAY = float(input('How many hours do you work per day: '))
 
@@ -31,8 +32,7 @@ Now that we have a valid duration which belongs to one of the four - day/week/mo
 Calculate the salary based on the user input duration.
 """
 
-if duration == 'day':
-    # Calculate the salary earned per day.
+if duration == 'day': # Calculate the salary earned per day.
     print(f'After a day you will earn ${SALARY_PER_HOUR * HOURS_PER_DAY}')
 
 else:

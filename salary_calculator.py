@@ -36,7 +36,7 @@ else:
     # Now that duration is either week/month/year
     # prompt the user for days spent working per week.
     DAYS_PER_WEEK = int(input('How many days do you work per week: '))
-    while DAYS_PER_WEEK not in range(7):        # Day input validation.
+    while DAYS_PER_WEEK not in range(8):        # Day input validation.
         print('Error: Invalid day value')
         DAYS_PER_WEEK = int(input('How many days do you work per week: '))
 

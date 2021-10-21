@@ -25,6 +25,7 @@ while duration not in ['day', 'week',
     print('Error: Invalid duration')
     duration = input('Enter the duration to calculate (day/week/month/year): ')
 
+
 # Now that we have a valid duration (day/week/month/year)
 # calculate the salary based on the user input duration.
 

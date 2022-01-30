@@ -31,7 +31,7 @@ while duration not in ['day', 'week',
 # calculate the salary based on the user input duration.
 
 if duration == 'day': # Calculate the salary earned per day.
-    print(f'After a day you\'ll earn ${salary_per_hour * hours_per_day}')
+    print(f'After a day you will earn ${salary_per_hour * hours_per_day}')
 
 else:
     # Now that duration is either week/month/year
@@ -46,14 +46,14 @@ else:
 
     # Calculate the salary earned per week/month/year.
     if duration == 'week':
-        print(f'After a {duration} you\'ll earn ${long_term_salary}')
+        print(f'After a {duration} you will earn ${long_term_salary}')
 
     elif duration == 'month':
         print(
-            f'After a {duration} you you\'ll between ${long_term_salary * 4}'
+            f'After a {duration} you will earn between ${long_term_salary * 4}'
             f' and ${long_term_salary * 4.34524 : .2f}')
 
     else:
         print(
-            f'After a {duration} you\'ll earn between ${long_term_salary * 48}'
+            f'After a {duration} you will earn between ${long_term_salary * 48}'
             f' and ${long_term_salary * 52.1329 : .2f}')

@@ -51,9 +51,9 @@ else:
     elif duration == 'month':
         print(
             f'After a {duration} you you\'ll between ${long_term_salary * 4}'
-            f' and ${format(long_term_salary * 4.34524, ".2f")}')
+            f' and ${long_term_salary * 4.34524 : .2f}')
 
     else:
         print(
             f'After a {duration} you\'ll earn between ${long_term_salary * 48}'
-            f' and ${format(long_term_salary * 52.1329, ".2f")}')
+            f' and ${long_term_salary * 52.1329 : .2f}')

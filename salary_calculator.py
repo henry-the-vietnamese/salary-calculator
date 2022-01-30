@@ -4,7 +4,7 @@
 # File:         salary_calculator.py
 # Author:       Tan Duc Mai
 # Email:        tan.duc.work@gmail.com
-# Date:         11/10/2021
+# Date:         11-Oct-21
 # Description:  Calculate how much a user will get paid after a day, week,
 #               month, or year.
 #   I hereby declare that I completed this work without any improper help

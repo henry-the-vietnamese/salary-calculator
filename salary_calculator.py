@@ -17,13 +17,13 @@ salary_per_hour = float(input('How much do you get paid per hour: '))
 
 hours_per_day = float(input('How many hours do you work per day: '))
 while not 0 <= hours_per_day <= 24:             # Hour input validation.
-    print('Error: Invalid hour value')
+    print('ERROR: Invalid hour value')
     hours_per_day = float(input('How many hours do you work per day: '))
 
 duration = input('Enter the duration to calculate (day/week/month/year): ')
 while duration not in ['day', 'week', 
                        'month', 'year']:        # Duration input validation.
-    print('Error: Invalid duration')
+    print('ERROR: Invalid duration')
     duration = input('Enter the duration to calculate (day/week/month/year): ')
 
 
@@ -38,7 +38,7 @@ else:
     # prompt the user for days spent working per week.
     days_per_week = int(input('How many days do you work per week: '))
     while days_per_week not in range(8):        # Day input validation.
-        print('Error: Invalid day value')
+        print('ERROR: Invalid day value')
         days_per_week = int(input('How many days do you work per week: '))
 
     # Initialisa a variable representing a common operation.

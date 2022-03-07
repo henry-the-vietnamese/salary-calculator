@@ -21,7 +21,7 @@ while not 0 <= hours_per_day <= 24:             # Hour input validation.
     hours_per_day = float(input('How many hours do you work per day: '))
 
 duration = input('Enter the duration to calculate (day/week/month/year): ')
-while duration not in ['day', 'week', 
+while duration not in ['day', 'week',
                        'month', 'year']:        # Duration input validation.
     print('ERROR: Invalid duration')
     duration = input('Enter the duration to calculate (day/week/month/year): ')
@@ -30,7 +30,7 @@ while duration not in ['day', 'week',
 # Now that we have a valid duration (day/week/month/year)
 # calculate the salary based on the user input duration.
 
-if duration == 'day': # Calculate the salary earned per day.
+if duration == 'day':  # Calculate the salary earned per day.
     print(f'After a day you will earn ${salary_per_hour * hours_per_day}')
 
 else:
